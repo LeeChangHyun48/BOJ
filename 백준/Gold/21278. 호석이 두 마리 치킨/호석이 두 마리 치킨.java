@@ -43,12 +43,12 @@ public class Main {
 		}
 
 		int min = INF;
-		int sum = 0;
 		int cA = 0;
 		int cB = 0;
 
 		for (int i = 1; i <= N; i++) {
 			for (int j = i + 1; j <= N; j++) {
+				int sum = 0;
 				for (int k = 1; k <= N; k++) {
 					sum += Math.min(arr[i][k], arr[j][k]);
 				}
